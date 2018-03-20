@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html,
+.error {
+    color: red;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-color: #eceff1;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 42px;
+    color: #263238;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size:36px;
+    color: #263238;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #263238;
+}
+.button {
+    background-color: #8bc34a;
+    width: 88px;
+    height: 40px;
+    border-radius: 2px;
+    font-family: 'Open Sans', sans-serif;
+    color: #263238;
+    font-style: bold;
+    font-size: 14px;
+    cursor:pointer;
+    border: none;
+}
+.button:hover {
+    background-color: #7cb342;
+}
+.indexpage {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.buttons {
+    align-items: space-around;
+    flex-wrap: nowrap;
+}
+
+.loginpage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.formregister {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    box-sizing: border-box;
+    width: 480px;
+    height: 400px;
+}
+@media only screen and (max-width: 500px) {
+    .formregister {
+        width: 344px;
+        height: auto;
+    }
+}
+.formlogin {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    box-sizing: border-box;
+    width: 320px;
+    height: 280px; 
+}
+input {
+    border: none;
+    border-bottom: 2px solid #90a4ae;
+    margin-top: 16px;
+    height: 32px;
+    width: 200px;
+    transition:all linear 0.4s;
+    color: #546e7a;
+    
+}
+
+input:active {
+    background-color: #eceff1;
+}
+input:hover {
+    border-bottom: 2px solid #546e7a;
+}

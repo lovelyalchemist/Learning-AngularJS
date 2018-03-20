@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" media="screen" href="main.css">
+    <meta name="description" content="Online Kayıt Sayfası">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Ebru Esra">
+    
+</head>
+<script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+
+<body ng-app = "myApp">
+    <div class="loginpage">
+        <h2>Login Page</h2>
+            <form class="formlogin" name="myForm" ng-controller="FormController">
+                <p>Mail Adress <br>
+                    <input type="email" name="input" ng-model="email.text" required>
+                </p>
+                    <div role="alert">
+                        <span class="error" ng-show="myForm.input.$error.email">Not valid email!</span>
+                    </div>
+                <p>Password <br>
+                    <input type = "password" ng-model = "userpassword.text" name="userpassword" required>
+                </p>
+                    <div role="alert">
+                        <span class="error" ng-show="myForm.userpassword.$error.required">Required!</span>
+                    </div>
+            </form>
+        <br>
+        <button class="button">Login</button>
+        <p> If you haven't sign up; <a href="register.html">Sign Up</a></p>
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
